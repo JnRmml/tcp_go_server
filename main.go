@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	targetIP := "192.168.178.46:42069"
+	targetIP := "192.168.178.0:42069" //IP Adresse funktioniert sowieso nur lokal
 	
 	conn, err := net.Dial("tcp", targetIP)
 	if err != nil {
@@ -17,7 +17,7 @@ func main() {
 	defer conn.Close()
 	fmt.Println("TCP-Client hat auf Port 42069 gesendet")
 	
-	data, err := os.ReadFile("message.txt")
+	data, err := os.ReadFile("message.txt") //txt anpassen
 	if err != nil {
 		conn.Write([]byte("Fehler beim Lesen der Datei\n"))
 		return
