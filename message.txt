@@ -1,0 +1,7 @@
+Hier steht eine wichtige Nachricht vom TCP Server
+Bitte diese Nachricht anzeigen
+Mit vielen Grüßen
+Hier ist noch eine Zeile
+
+Was ist wenn die Zeile davor leer war?
+MfG
